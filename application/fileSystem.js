@@ -7,10 +7,10 @@ const fs = require('fs');
 //   }
 //   console.log(data);
 // });
-
-try {
-  const data = fs.readFileSync('./text.txt', 'utf8');
-  console.log(data);
-} catch (err) {
-  console.log(err);
-}
+//
+// try {
+//   const data = fs.readFileSync('./text.txt', 'utf8');
+//   console.log(data);
+// } catch (err) {
+//   console.log(err);
+// }
