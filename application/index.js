@@ -1,6 +1,36 @@
 const http = require('http');
 const colors = require('colors');
 const fs = require('fs');
+const mysql = require('mysql');
+
+
+const con = mysql.createConnection({
+  host: '127.0.0.1',
+  user: 'root',
+  port: 8889,
+  password: 'root',
+  database: 'job',
+});
+
+con.connect((error) => {
+  if (error) {
+    console.log(error);
+    return;
+  }
+  console.log('DB connected');
+});
+
+con.query('SELECT * FROM authors', (error, rows) => {
+  if (error) {
+    console.log(error, '');
+    return;
+  }
+  rows.forEach(row => {
+    console.log(row.name);
+  });
+});
+
+
 
 import { responseHomeBody } from './routes/home';
 import { responseAboutBody } from './routes/about';
