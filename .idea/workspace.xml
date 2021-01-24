@@ -15,12 +15,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/helpers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/routes" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/routes" />
       <recent name="$PROJECT_DIR$/application/helpers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -41,5 +42,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="935" y="483" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611497639097">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="935" y="483" key="#com.intellij.fileTypes.FileTypeChooser/2560.582.1440.877/0.23.2560.1417/-2560.23.2560.1372/-3640.-269.1080.1897@0.23.2560.1417" timestamp="1611497639097" />
   </component>
 </project>
