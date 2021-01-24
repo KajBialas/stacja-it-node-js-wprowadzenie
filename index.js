@@ -4,7 +4,7 @@ const PORT = 8000;
 
 const add = (a, b) => b ? a + b : a;
 
-const responseBody = `<div>Aplikacja NodeJS</div><div>Aplikacja działa na porcie: ${PORT}</div><div>Wynikiem dodawania liczb 5 i 6 jest: ${add(5,6)}</div>`;
+const responseBody = `<div>Aplikacja NodeJS</div><div>Aplikacja działa na porcie: ${PORT}</div><div>Wynikiem dodawania liczb 6 i 6 jest: ${add(6,6)}</div>`;
 
 const server = http.createServer((request, response) => {
   response.writeHead(200, {
@@ -14,5 +14,5 @@ const server = http.createServer((request, response) => {
 });
 
 server.listen(PORT, '127.0.0.1', () => {
-  console.log(`Server listening at port ${PORT}`);
+  console.log(`Server listening a port ${PORT}`);
 });

@@ -7,7 +7,7 @@ const PORT = 8000;
 
 const add = (a, b) => b ? a + b : a;
 
-const responseBody = `<div>Aplikacja NodeJS</div><div>Aplikacja działa na porcie: ${PORT}</div><div>Wynikiem dodawania liczb 5 i 6 jest: ${add(5,6)}</div><footer>Copyright ${dateFns.format(new Date(), 'yyyy-MM-dd')}</footer>`;
+const responseBody = `<div>Aplikacja NodeJS</div><div>Aplikacja działa na porcie: ${PORT}</div><div>Wynikiem dodawania liczb 6 i 6 jest: ${add(6,6)}</div><footer>Copyright ${dateFns.format(new Date(), 'yyyy-MM-dd')}</footer>`;
 
 const server = http.createServer((request, response) => {
   response.writeHead(200, {
