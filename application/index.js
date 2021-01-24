@@ -5,6 +5,8 @@ const fs = require('fs');
 import { responseHomeBody } from './routes/home';
 import { responseAboutBody } from './routes/about';
 import { response404Body } from './routes/page404';
+import { sortedArray } from './fileSystem';
+
 const PORT = 8000;
 
 
@@ -25,6 +27,11 @@ const server = http.createServer((request, response) => {
         response.end(page);
       });
       break;
+    case '/api/users':
+      response.writeHead(200, {
+        'Content-Type': 'application/json'
+      });
+      response.end(JSON.stringify(sortedArray));
     default: response.end(response404Body);
   }
 });

@@ -11,7 +11,7 @@ try {
   console.log(err);
 }
 
-const sortedArray = _.sortBy(users, ['name']);
+export const sortedArray = _.sortBy(users, ['name']);
 
 fs.writeFile('sortedUsers.json', JSON.stringify(sortedArray), (err) => {
   if (err) {
