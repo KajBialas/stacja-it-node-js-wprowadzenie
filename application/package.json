@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "start:watch": "nodemon index.js",
+    "start:watch": "nodemon -r esm index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "colors": "^1.4.0",
-    "date-fns": "^2.16.1"
+    "date-fns": "^2.16.1",
+    "esm": "^3.2.25"
   }
 }

@@ -1,13 +1,28 @@
 const http = require('http');
 const colors = require('colors');
-const dateFns = require('date-fns');
 
+import { add } from './helpers/add';
+import { sub } from './helpers/sub';
+import { APPLICATION_HEADER_TEMPLATE} from './partials/header';
+import { APPLICATION_FOOTER_TEMPLATE} from './partials/footer';
 
 const PORT = 8000;
 
-const add = (a, b) => b ? a + b : a;
+const addResult = add(5,10);
+const subResult = sub(10,5);
 
-const responseBody = `<div>Aplikacja NodeJS</div><div>Aplikacja działa na porcie: ${PORT}</div><div>Wynikiem dodawania liczb 6 i 6 jest: ${add(6,6)}</div><footer>Copyright ${dateFns.format(new Date(), 'yyyy-MM-dd')}</footer>`;
+const responseBodyContent = `
+  <div>
+    Wynikiem działalnia dodawania dla 5 i 10 jest: ${addResult}<br/>
+    Wynikiem działania odejmowania dla 10 i 5 jest ${subResult}
+  </div>
+`;
+
+const responseBody = `
+  ${APPLICATION_HEADER_TEMPLATE}
+  ${responseBodyContent}
+  ${APPLICATION_FOOTER_TEMPLATE}
+`;
 
 const server = http.createServer((request, response) => {
   response.writeHead(200, {

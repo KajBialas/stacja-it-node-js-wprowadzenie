@@ -1,0 +1,1 @@
+export const APPLICATION_HEADER_TEMPLATE = '<header>Aplikacja NodeJS</header>';
