@@ -1,3 +1,4 @@
-const x = 5;
+const add = (a, b) => b ? a + b : a;
 
-console.log('Licza', x);
+console.log(add(5,5));
+console.log(add(6));
